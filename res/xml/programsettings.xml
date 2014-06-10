@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.feestje.settings2"
+    android:title="settings"
+    android:key="parent">
+            
+        <com.feestje.settings2.IconPreferenceScreen
+            android:title="Radio"
+            settings:icon="@drawable/ic_settings_wireless">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.WirelessSettings" />
+        </com.feestje.settings2.IconPreferenceScreen>
+
+        <com.feestje.settings2.IconPreferenceScreen
+            android:key="call_settings"
+            settings:icon="@drawable/ic_settings_call"
+            android:title="Call">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.phone"
+                android:targetClass="com.android.phone.CallFeaturesSetting" />
+        </com.feestje.settings2.IconPreferenceScreen>
+
+        <!-- Sound -->
+
+        <com.feestje.settings2.IconPreferenceScreen
+            settings:icon="@drawable/ic_settings_sound"
+            android:title="sound">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.SoundSettings" />
+        </com.feestje.settings2.IconPreferenceScreen>
+
+        <!-- Display -->
+
+        <com.feestje.settings2.IconPreferenceScreen
+            settings:icon="@drawable/ic_settings_display"
+            android:title="display">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.DisplaySettings" />
+        </com.feestje.settings2.IconPreferenceScreen>
+
+        <!-- Security & Location -->
+
+        <com.feestje.settings2.IconPreferenceScreen
+            settings:icon="@drawable/ic_settings_security"
+            android:title="security"
+            android:key="security_settings">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.SecuritySettings" />
+        </com.feestje.settings2.IconPreferenceScreen>
+
+        <!-- Application Settings -->
+
+        <com.feestje.settings2.IconPreferenceScreen
+            settings:icon="@drawable/ic_settings_applications"
+            android:title="applicaionts"
+            android:key="applications_settings">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.ApplicationSettings" />
+        </com.feestje.settings2.IconPreferenceScreen>
+
+        <!-- Data Sync. The settings activity will ensure this is resolved to an
+             activity on the system image, otherwise it will remove this
+             preference. -->
+
+        <com.feestje.settings2.IconPreferenceScreen
+            settings:icon="@drawable/ic_settings_sync"
+            android:title="sync"
+            android:key="sync_settings">
+            <intent android:action="android.settings.SYNC_SETTINGS" />
+        </com.feestje.settings2.IconPreferenceScreen>
+
+        <!-- Privacy -->
+
+        <com.feestje.settings2.IconPreferenceScreen
+            settings:icon="@drawable/ic_settings_privacy"
+            android:title="privacy"
+            android:key="privacy_settings">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.PrivacySettings" />
+        </com.feestje.settings2.IconPreferenceScreen>
+
+        <!-- Storage -->
+
+        <com.feestje.settings2.IconPreferenceScreen 
+            settings:icon="@drawable/ic_settings_storage"
+            android:title="storage">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.deviceinfo.Memory" />
+        </com.feestje.settings2.IconPreferenceScreen>
+
+        <!-- Language -->
+
+        <com.feestje.settings2.IconPreferenceScreen
+            settings:icon="@drawable/ic_settings_language"
+            android:title="Language">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.LanguageSettings" />
+        </com.feestje.settings2.IconPreferenceScreen>
+
+        <!-- Voice input & output -->
+
+        <com.feestje.settings2.IconPreferenceScreen
+            settings:icon="@drawable/ic_settings_speech"
+            android:title="input">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.VoiceInputOutputSettings" />
+        </com.feestje.settings2.IconPreferenceScreen>
+
+        <!-- Accessibility feedback -->
+
+        <com.feestje.settings2.IconPreferenceScreen
+            settings:icon="@drawable/ic_settings_accessibility"
+            android:title="accessibility">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.AccessibilitySettings" />
+        </com.feestje.settings2.IconPreferenceScreen>
+
+        <!-- Dock -->
+
+        <com.feestje.settings2.IconPreferenceScreen
+            android:key="dock_settings"
+            settings:icon="@drawable/ic_settings_dock"
+            android:title="dock">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.DockSettings" />
+        </com.feestje.settings2.IconPreferenceScreen>
+
+        <!-- Date & Time -->
+
+        <com.feestje.settings2.IconPreferenceScreen
+            settings:icon="@drawable/ic_settings_date_time"
+            android:title="time date">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.DateTimeSettings" />
+        </com.feestje.settings2.IconPreferenceScreen>
+
+        <!-- About Device -->
+
+        <com.feestje.settings2.IconPreferenceScreen
+            settings:icon="@drawable/ic_settings_about"
+            android:title="about">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.DeviceInfoSettings" />
+        </com.feestje.settings2.IconPreferenceScreen>
+
+</PreferenceScreen>

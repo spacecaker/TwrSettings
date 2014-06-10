@@ -1,0 +1,36 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Black">
+        <item name="android:windowTitleSize">48.0dip</item>
+        <item name="android:windowTitleStyle">@style/WindowTitle2</item>
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+		<item name="android:checkboxStyle">@style/Widget.CompoundButton.CheckBox.Holo.Dark</item>	
+    </style>
+    <style name="Widget.CompoundButton.CheckBox.Holo.Dark" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/switch_holo_dark</item>
+    </style>
+    <style name="WindowTitle2">
+        <item name="android:width">320.0dip</item>
+        <item name="android:height">48.0dip</item>
+    </style> 
+        
+    <style name="WindowTitleBackground">
+        <item name="android:background">#ff017f96</item>
+    </style> 
+       
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+	
+    <style name="TabBg" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+	</style>
+</resources>

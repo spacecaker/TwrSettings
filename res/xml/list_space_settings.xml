@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_label_launcher" android:key="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.feestje.settings2">
+    <PreferenceCategory android:title="@string/radio_spacecake" />
+    <com.feestje.settings2.IconCheckPreference android:title="Wifi" android:key="toggle_wifi" settings:icon="@drawable/ic_settings_wireless" />
+    <com.feestje.settings2.IconCheckPreference android:title="Bluetooth" android:key="toggle_bluetooth" settings:icon="@drawable/ic_settings_bluetooth2" />
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/data_quick_toggle_title" settings:icon="@drawable/ic_settings_data">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.Settings" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/spacecake_more" settings:icon="@drawable/ic_settings_more">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.WirelessSettings" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <PreferenceCategory android:title="@string/spacecake_device" />
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/sound_settings_title" settings:icon="@drawable/ic_settings_sound">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.SoundSettings" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/display_settings_title" settings:icon="@drawable/ic_settings_display">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.DisplaySettings" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/storage_settings" settings:icon="@drawable/ic_settings_storage">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.deviceinfo.Memory" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/power_saving" settings:icon="@drawable/ic_settings_quickpanel_quick">
+        <intent android:targetPackage="com.lidroid.toolbox" android:action="com.lidroid.toolbox.POWERSAVEMODE" android:targetClass="com.lidroid.toolbox.powersaving.PowerSavingActivity" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/spacecake_battery" android:key="status_info" settings:icon="@drawable/ic_settings_battery">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.fuelgauge.PowerUsageSummary" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/applications_settings" android:key="applications_settings" settings:icon="@drawable/ic_settings_applications">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.ApplicationSettings" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <PreferenceCategory android:title="@string/spacecake_interface" />
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/spacecake_rom" settings:icon="@drawable/quickpanelicon">
+        <intent android:targetPackage="com.lidroid.parts" android:action="android.intent.action.MAIN" android:targetClass="com.lidroid.parts.MainActivity" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <PreferenceCategory android:title="@string/spacecake_personal" />
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/privacy_settings" android:key="privacy_settings" settings:icon="@drawable/ic_settings_privacy">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.PrivacySettings" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/language_settings" settings:icon="@drawable/ic_settings_language">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.LanguageSettings" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/security_settings_title" android:key="security_settings" settings:icon="@drawable/ic_settings_security">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.SecuritySettings" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <PreferenceCategory android:title="@string/spacecake_accounts" />
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/sync_settings" android:key="sync_settings" settings:icon="@drawable/ic_settings_sync">
+        <intent android:action="android.settings.SYNC_SETTINGS" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/add_account" settings:icon="@drawable/ic_menu_add">
+        <intent android:action="android.settings.ADD_ACCOUNT_SETTINGS" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <PreferenceCategory android:title="@string/spacecake_system" />
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/voice_input_output_settings" settings:icon="@drawable/ic_settings_speech">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.VoiceInputOutputSettings" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/call_settings_title" android:key="call_settings" settings:icon="@drawable/ic_settings_call">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.CallFeaturesSetting" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/accessibility_settings" settings:icon="@drawable/ic_settings_accessibility">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.AccessibilitySettings" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/development_title" settings:icon="@drawable/ic_settings_development">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.DevelopmentSettings" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/date_and_time_settings_title" settings:icon="@drawable/ic_settings_date_time">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.DateTimeSettings" />
+    </com.feestje.settings2.IconPreferenceScreen>
+    <com.feestje.settings2.IconPreferenceScreen android:title="@string/about_settings" settings:icon="@drawable/ic_settings_about">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.DeviceInfoSettings" />
+    </com.feestje.settings2.IconPreferenceScreen>
+</PreferenceScreen>

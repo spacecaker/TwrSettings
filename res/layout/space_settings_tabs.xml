@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/tabsLayout"
+     android:layout_width="match_parent"
+     android:layout_height="40.0dip" 
+     android:layout_marginLeft="0.0dip" 
+     android:layout_marginRight="0.0dip" 
+     android:layout_weight="1.0"
+     android:gravity="center"
+     android:orientation="vertical"
+     style="@style/TabBg" >
+     <TextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/tabsText"
+        android:padding="10px"
+        android:textSize="14.0dip"
+        android:textColor="#ffffffff" 
+        android:ellipsize="marquee" 
+        android:focusable="true" 
+        android:layout_width="82.0dip" 
+        android:layout_height="40.0dip" 
+        android:layout_marginLeft="1.0px"
+        android:layout_marginRight="1.0px" 
+        android:scrollHorizontally="true" 
+        android:shadowColor="#ff000000" 
+        android:shadowDy="1.0" 
+        android:shadowRadius="1.0" 
+        android:layout_weight="1.0"
+        android:layout_centerHorizontal="true"
+        style="?android:attr/tabWidgetStyle"
+    />
+</LinearLayout>
